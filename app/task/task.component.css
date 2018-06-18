@@ -1,0 +1,23 @@
+button {
+    margin-left: 10px;
+}
+#input-1 {
+    width: 25%;
+}
+#input-2 {
+    width: 50px;
+}
+#label-2 {
+    margin-left: 20px;
+}
+input {
+    width: 90px;
+}
+span {
+    color: red;
+    font-weight: 700;
+}
+#buttonRefresh {
+    float: right;
+    margin-right: 40.5%;
+}

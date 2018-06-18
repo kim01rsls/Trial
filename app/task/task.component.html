@@ -1,0 +1,29 @@
+<h2>{{title1}}</h2>
+<div>
+  <label>Enter a Number:</label>
+  <input type="number" [(ngModel)]="numberGuess" placeholder="input(0 - 100)" onkeydown="javascript: return event.keyCode == 69 ? false : true"/>
+  <button (click)="check1();" *ngIf="btnShow">check</button>
+</div>
+<div *ngIf="lifebar">
+  <label>Life:</label>
+  <span>{{life}}</span>
+</div>
+<div>
+  <h2 *ngIf="lesser">Your number is Lesser!</h2>
+  <h2 *ngIf="greater">Your number is Greater!</h2>
+  <h1 *ngIf="resultMagic">You Win!</h1>
+  <h2 *ngIf="error">Error, no input!</h2>
+  <h1 *ngIf="noLife">No Life Left!</h1>
+</div>
+
+<h2>{{title2}}</h2>
+<div>
+  <label>Enter Numbers:</label>
+  <input  id="input-1" [(ngModel)]="inputNum" (blur)="splitInput()" placeholder="enter numbers separated by space"/>
+  <label id="label-2">Sum of Numbers:</label>
+  <input type="number" [(ngModel)]="numFind" id="input-2" placeholder="sum" onkeydown="javascript: return event.keyCode == 69 ? false : true"/>
+  <button (click)="check2();">check</button>
+</div>
+<div *ngIf="hidden">
+  <h1>{{result ? 'Yes!' : 'No!'}}</h1>
+</div>

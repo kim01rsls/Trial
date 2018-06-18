@@ -1,0 +1,10 @@
+<div>
+  <label>Enter Numbers:</label>
+  <input  id="inputNumbers" [(ngModel)]="inputNum" placeholder="enter numbers separated by comma"/>
+  <label id="label-2">Sum of Numbers:</label>
+  <input type="number" [(ngModel)]="numFind" id="inputSum" placeholder="sum" onkeydown="javascript: return event.keyCode == 69 ? false : true"/>
+  <button (click)="check();">check</button>
+</div>
+<div>
+  <h2>{{result}}</h2>
+</div>

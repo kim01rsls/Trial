@@ -1,0 +1,12 @@
+<div>
+  <label>Enter a Number:</label>
+  <input id="numberGuessRestart" value="resultMessage" type="number" [(ngModel)]="numberGuess" placeholder="input(0 - 100)" onkeydown="javascript: return event.keyCode == 69 ? false : true"/>
+  <button (click)="check();">check</button>
+</div>
+<div>
+  <label>Life:</label>
+  <span id="lifeRemain">{{life}}</span>
+</div>
+<div>
+  <h2>{{resultMessage}}</h2>
+</div>
